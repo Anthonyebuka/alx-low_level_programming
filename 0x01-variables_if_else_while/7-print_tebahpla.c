@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main - Prints reversed alphabet.
- *
- * Returned: Always 0 (Success)
- */
+* main - Lanzador.
+*
+* Return: Always 0.
+*/
+
 int main(void)
 {
-	int i;
+	char z = 'z';
 
-	for (i = 122; i < 96; i--)
+	for (z = 'z'; z >= 'a'; z--)
 	{
-		putchar(i);
+		putchar(z);
 	}
 	putchar('\n');
 	return (0);
