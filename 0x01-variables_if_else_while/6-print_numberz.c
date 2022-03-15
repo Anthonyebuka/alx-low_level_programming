@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main Prints numbers between 0 to 9.
- *
- * Return: Always 0 (Success)
- */
+* main - Lanzador.
+*
+* Return: Always 0.
+*/
+
 int main(void)
 {
-	int i;
+	int a = '0';
 
-	for (i = 48; i < 58; i++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		putchar(i);
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
