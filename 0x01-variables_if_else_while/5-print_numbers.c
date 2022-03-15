@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 /**
- * main Prints numbers from 0 to 9.
- *
- * Return: Always 0 (Success)
- */
+* main - Lanzador.
+*
+* Return: Always 0.
+*/
+
 int main(void)
 {
-	int i;
+	int a = '0';
 
-	for (i = 0; i < 10; i++)
+	for (a = '0'; a <= '9'; a++)
 	{
-		printf("%d", i);
+		putchar(a);
 	}
 	putchar('\n');
 	return (0);
