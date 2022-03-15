@@ -1,44 +1,47 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers between 012 to 789.
+ * main - Determines if a number is positive, negative or zero
  *
- * Return: Always 0 (Success)
+ * Description: print triple digit combos
+ *
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int i, e, g;
+	int i, j, k;
 
 	i = 48;
-	e = 48;
-	g = 48;
+	j = 48;
+	k = 48;
 
-	while (e < 58)
+	while (i < 58)
 	{
-		i = 48;
-		while (i < 58)
+		j = i + 1;
+		while (j < 58)
 		{
-			g - 48;
-			while (g < 58)
+			k = j + 1;
+			while (k < 58)
 			{
-				if (e != i && e != g && i != g && e < i && i < g)
+				putchar(i);
+				putchar(j);
+				putchar(k);
+				if (i < 55 || j < 56 || k < 57)
 				{
-					putchar(e);
-					putchar(i);
-					putchar(g);
-					if (i == 56 && e == 55 && g == 57)
-					{
-						break;
-					}
-					putchar(',');
-					putchar(' ');
+					putchar(44);
+					putchar(32);
 				}
-				g++;
+				k++;
 			}
-			i++;
-		}
-		e++;
-	}
-	putchar('\n');
-	return (0);
 
+			j++;
+		}
+
+		i++;
+	}
+
+	putchar(10);
+
+	return (0);
+}
