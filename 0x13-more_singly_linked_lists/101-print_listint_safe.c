@@ -5,7 +5,7 @@
  * @h: Doble puntero asignado
  * Return: i
  */
-size_t free_listint_safe(listint_t **h)
+size_t print_listint_safe(const listint_t *head)
 {
 	listint_t *temp;
 	size_t i = 0;
